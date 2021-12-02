@@ -3,8 +3,8 @@
 # Team Description
 
 The team consists of two members from the UG-2022 batch. They are:
-Manul Goyal (B18CSE031)
-Manan Rakeshkumar Shah (B18CSE030)
+- Manul Goyal (B18CSE031)
+- Manan Rakeshkumar Shah (B18CSE030)
 
 # Instructions for Running
 
