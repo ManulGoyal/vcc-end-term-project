@@ -1,5 +1,7 @@
 # VCC END TERM PROJECT
 
+Link to the project report: https://docs.google.com/document/d/1CTimmQPA2TsL3G3eK2Ht-QbwLFWy1zNc8bwOi-6rjc8/edit?usp=sharing
+
 # Team Description
 
 The team consists of two members from the UG-2022 batch. They are:
@@ -13,6 +15,8 @@ The team consists of two members from the UG-2022 batch. They are:
 3. Run the following:
 `$ docker-compose up`
 4. All four containers will be created automatically. You can go to localhost:8888 in your browser to access the chronograf management UI and see the system metrics data.
+
+Note that since we have implemented GitHub OAuth 2.0 based authentication, you will not be able to access the chronograf web UI, since you are not part of the authorized GitHub organization created by us. In order to access it, remove the authentication by removing lines 34-38 in docker-compose.yaml, then again follow from step 3 onwards. 
 
 # Stepwise Description
 We have written a docker-compose.yaml file which describes the creation of the four containers, sets up a new bridge network, and attaches all four containers to this newly created network. It also specifies the environment variables, port mappings, and mount volumes. The directories containing the configuration files as well as the directories for the data are mounted in the containers, in order to give access of the configuration files to the containers and to persist the data in the time-series database across container restarts.
