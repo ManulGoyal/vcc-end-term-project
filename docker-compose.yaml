@@ -7,7 +7,7 @@ services:
       - ./influxdb/config/:/etc/influxdb/
     networks:
       - vcc-net-secure
-      
+
   telegraf:
     image: "telegraf:latest"
     environment:
@@ -35,6 +35,7 @@ services:
       TOKEN_SECRET: "eaf55bcda5330f6b8e1e421e9e00b1f3e80afc75"
       GH_CLIENT_ID: "7dc391a5f2eb5faf8997"
       GH_CLIENT_SECRET: "3fb2aa261ade4f8455074a93bbe344f8d2d5a6cd"
+      GH_ORGS: "vcc-end-term-project-org"
     ports:
       - "8888:8888"
     depends_on:
